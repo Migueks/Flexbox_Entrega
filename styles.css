@@ -4,23 +4,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
   --primary-color: #f6f6f6;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-}
-
 header {
-  margin-top: 1.875em;
+  margin-top: 2.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 16.25em;
+  margin-right: 16.25em;
   max-width: 80%;
 }
 
@@ -33,17 +30,394 @@ header h2:hover {
   cursor: pointer;
 }
 
-.header-nav {
+.header-nav ul {
   display: flex;
   list-style: none;
-  gap: 1.25em;
+  gap: 3em;
 }
 
 .header-nav a {
   text-decoration: none;
   color: black;
+  font-weight: 600;
 }
 
 .header-nav a:hover {
   cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10.4em;
+  margin-right: 10.4em;
+  max-width: 80%;
+  margin-top: 5.5em;
+  flex-wrap: wrap;
+  gap: 6.25em;
+}
+
+.img_hero {
+  height: 29.938em;
+  border-radius: 1.5em;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 50%;
+}
+
+.hero h1 {
+  font-size: 5em;
+}
+
+.hero p {
+  font-size: 1.65em;
+}
+
+.hero button {
+  border-radius: 0.4em;
+  font-size: 1em;
+  color: white;
+  background-color: #8eadd5;
+  border: 1px solid #8eadd5;
+  width: 11em;
+  height: 3em;
+}
+
+.hero button:hover {
+  cursor: pointer;
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.paragraph {
+  color: #8b93a2;
+}
+
+.logo {
+  background-color: #f6f6f6;
+  border-radius: 1em;
+  width: 65%;
+  margin-top: 1em;
+  height: 6.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.875em;
+}
+
+.logo_img_spotify {
+  width: 10.375em;
+  height: 3.125em;
+}
+
+.logo_img_slack {
+  width: 12.25em;
+  height: 3.125em;
+}
+
+.logo_img_dropbox {
+  width: 15.875em;
+  height: 3.125em;
+}
+
+.logo_img_zoom {
+  width: 11.125em;
+  height: 2.5em;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.testimonial p {
+  font-weight: 400;
+  font-size: 1.125em;
+}
+
+.testimonial h2 {
+  width: 10em;
+  text-align: center;
+  font-size: 3.125em;
+  padding-top: 0.15em;
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  gap: 6.25em;
+  margin-top: 3.125em;
+}
+
+.testimonial_user {
+  width: 33%;
+  height: 28.125em;
+  background-color: #f6f6f6;
+  border-radius: 1.5em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial_img_1 {
+  width: 11.25em;
+}
+
+.testimonial_user p {
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.testimonial_user h3 {
+  margin-top: 0.75em;
+  font-size: 1.188em;
+}
+
+footer {
+  background-color: #f6f6f6;
+  padding-top: 6.25em;
+  padding-right: 3.125em;
+  padding-left: 3.125em;
+  margin-top: 6.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.footer_container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625em;
+}
+
+.footer_container ul li {
+  list-style: none;
+}
+
+.footer_container ul li:first-child {
+  font-weight: bold;
+  padding-bottom: 1.25em;
+}
+
+.footer_container ul li:not(:first-child):hover {
+  cursor: pointer;
+}
+
+.footer_container .footer_text .ert:hover {
+  cursor: text;
+}
+
+.footer_text {
+  width: 12.5em;
+}
+
+.footer_paragraph {
+  margin-top: 6.25em;
+  margin-bottom: 1.25em;
+}
+
+@media (max-width: 767px) {
+  header nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    margin: auto;
+    max-width: 95%;
+    margin-top: 3.5em;
+    flex-wrap: wrap;
+    gap: 2.5em;
+  }
+
+  .img_hero {
+    width: 85%;
+    height: 85%;
+  }
+
+  .hero div {
+    gap: 1.5em;
+    width: 85%;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero button {
+    font-size: 1em;
+    width: 10em;
+    height: 2.75em;
+  }
+
+  .logo {
+    flex-wrap: wrap;
+    width: 85%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .testimonial h2 {
+    font-size: 2em;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    gap: 3em;
+    margin-top: 2.5em;
+  }
+
+  .testimonial_user {
+    width: 85%;
+    height: 28.125em;
+  }
+
+  footer {
+    padding-top: 5em;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .footer_container {
+    justify-content: space-between;
+    width: 85%;
+    flex-wrap: wrap;
+    gap: 1.1em;
+  }
+
+  .footer_text {
+    width: 8em;
+  }
+
+  .footer_social {
+    padding-right: 1.875em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1507px) {
+  header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+
+  .hero {
+    width: 100%;
+    margin-top: 3.5em;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-left: 41px;
+  }
+
+  .img_hero {
+    width: 70%;
+  }
+
+  .hero div {
+    gap: 2em;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 4.5em;
+  }
+
+  .hero p {
+    font-size: 1.5em;
+    width: 90%;
+  }
+
+  .hero button {
+    font-size: 1.2em;
+    width: 10em;
+    height: 3.5em;
+  }
+
+  .paragraph {
+    font-size: 1.2em;
+  }
+
+  .logo {
+    width: 90%;
+  }
+
+  .logo_img_spotify {
+    width: 20%;
+  }
+
+  .logo_img_slack {
+    width: 25%;
+  }
+
+  .logo_img_dropbox {
+    width: 25%;
+  }
+
+  .logo_img_zoom {
+    width: 20%;
+  }
+
+  .container {
+    width: 90%;
+    gap: 1.5em;
+  }
+
+  .testimonial_user {
+    width: 33%;
+  }
+
+  .testimonial_img_1 {
+    width: 10em;
+  }
+
+  .footer_container {
+    width: 100%;
+  }
 }
